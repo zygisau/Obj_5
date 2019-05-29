@@ -4,4 +4,4 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "../build")
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_FLAGS "-O0")
 
-add_executable(Obj_5 src/main.cpp src/main.h src/functions.cpp src/functions.h)
+add_executable(Obj_5 src/main.cpp src/main.h src/functions.cpp src/functions.h src/classes/WordModel/WordModel.h)
