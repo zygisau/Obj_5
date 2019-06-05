@@ -15,6 +15,4 @@ int main() {
 
 /*
  * TODO: one letter word
- * TODO: utf letters to lowercase
- * TODO: searching for link if(islink()) with regex;
  * */

@@ -14,10 +14,12 @@
 #include <regex>
 #include <vector>
 #include <iomanip>
+#include <codecvt>
+#include <locale>
 
 using std::string; using std::cout; using std::cin; using std::endl; using std::map;
 using std::ifstream; using std::ofstream; using std::istringstream; using std::regex;
-using std::vector; using std::fixed; using std::setfill; using std::setw;
+using std::vector; using std::fixed; using std::setfill; using std::setw; using std::u32string;
 
 typedef map<string, WordModel> mapType;
 
