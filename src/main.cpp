@@ -14,5 +14,6 @@ int main() {
 }
 
 /*
- * TODO: one letter word
+ * TODO: several points like one letter word
+ * TODO: format output file
  * */
