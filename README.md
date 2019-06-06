@@ -1,2 +1,22 @@
 # Obj_5
+![version][version-badge] 
+
 Objektinio programavimo 5 užduotis
+
+## Kas ir kaip?
+- Programa nuskaito duotą failą ir susskaičiuoja, kiek kartų kiekvienas skirtingas žodis pasikartoja tekste. Teksto pavyzdžiai paimti iš www.delfi.lt. 
+- Realizacijos output'e (išoriniame faile) išvedami
+  - Skirtingi žodžiai, kurie pasikartojo dažniau negu 1 kartą
+  - Count'eris, nurodantis kiek kartų konkretus žodis pasikartojo.
+  - Cross-reference tipo eilutė, kurioje nurodyta, kurioje teksto vietoje (kurioje(-iose) teksto eilutėse) kiekvienas iš daugiau negu vieną kartą pasikartojantis žodis buvo paminėtas.
+- Suranda ir tą patį atlieka su URL adresais.
+
+## Changelog
+### [v1.0](https://github.com/zygisau/Obj_5/releases/tag/v1.0) - (2019-05-06)  
+
+**Pridėta**  
+
+- Rezultatų faile išvedama pilna cross-reference tipo lentelė
+- Atpažįstami link'ai ir elektroniniai paštai
+
+[version-badge]: https://img.shields.io/badge/version-1.0-blueviolet.svg
