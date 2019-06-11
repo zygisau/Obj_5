@@ -201,21 +201,54 @@ string makeRefsString (const set<int>& references) {
     return refs;
 }
 
+int maxRefsCount (const mapType& words) {
+    int max = 0;
+    for (auto& elem : words) {
+        int size = elem.second.getReference().size();
+        if (max < size) {
+            max  = size;
+        }
+    }
+    return max;
+}
+
 void printElements (const mapType& words, const int& maxWord, const int& longestRef) {
     ofstream resultFile("result.txt");
     string refs; // var for the string of references
 
+    auto middle = words.begin();
+    advance( middle, words.size() / 2);
+    auto tempMiddle = middle;
+
+    int maxRefs = maxRefsCount(words);
+
     // iterate through all words in the map
     for (int i=1; i<=longestRef; i++) {
-        for (auto &elem : words) {
+        for (auto elem = words.begin(); elem != middle; ++elem) {
             // if the word was used more than one time
-            if (elem.second.getCounter() > 1 && elem.second.getCounter() == i) {
+            if (elem->second.getCounter() > 1 && elem->second.getCounter() == i) {
                 // print it
-                resultFile << std::left << setfill(' ') << elem.first << setw(maxWord - stringLength(elem.first) + 10)
-                           << std::right << elem.second.getCounter()
-                           << "     " << makeRefsString(elem.second.getReference()) << endl;
+                resultFile << std::left << setfill(' ') << elem->first << setw(maxWord - stringLength(elem->first) + 10)
+                           << std::right << elem->second.getCounter()
+                           << "     " << setw(maxRefs + 10) << std::right << makeRefsString(elem->second.getReference())
+                           << "  |  ";
+
+                while (tempMiddle != words.end()) {
+                    if (tempMiddle->second.getCounter() > 1 && tempMiddle->second.getCounter() == i) {
+                        // print it
+                        resultFile << std::left << setfill(' ') << tempMiddle->first
+                                   << setw(maxWord - stringLength(tempMiddle->first) + 10)
+                                   << std::right << tempMiddle->second.getCounter()
+                                   << "     " << makeRefsString(tempMiddle->second.getReference()) << endl;
+                        tempMiddle++;
+                        break;
+                    }
+
+                    tempMiddle++;
+                }
             }
         }
+
     }
     resultFile.close();
 }
