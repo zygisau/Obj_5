@@ -13,11 +13,15 @@ Objektinio programavimo 5 užduotis
 
 ## Changelog
 
+### [v1.3](https://github.com/zygisau/Obj_5/releases/tag/v1.3) - (2019-06-12)  
+#### EGZAMINO UŽD 1
+**Koreguota**  
+- Pakeista funkcija, spausdinanti į failą
+
 ### [v1.2](https://github.com/zygisau/Obj_5/releases/tag/v1.2) - (2019-06-12)  
 #### EGZAMINO UŽD 2
 **Koreguota**  
 - Pakeistas value objekte tipas iš vector į set
-
 
 ### [v1.1](https://github.com/zygisau/Obj_5/releases/tag/v1.1) - (2019-06-11)  
 
