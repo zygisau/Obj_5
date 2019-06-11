@@ -13,6 +13,12 @@ Objektinio programavimo 5 užduotis
 
 ## Changelog
 
+### [v1.2](https://github.com/zygisau/Obj_5/releases/tag/v1.2) - (2019-06-12)  
+#### EGZAMINO UŽD 2
+**Koreguota**  
+- Pakeistas value objekte tipas iš vector į set
+
+
 ### [v1.1](https://github.com/zygisau/Obj_5/releases/tag/v1.1) - (2019-06-11)  
 
 **Koreguota**  
@@ -25,4 +31,4 @@ Objektinio programavimo 5 užduotis
 - Rezultatų faile išvedama pilna cross-reference tipo lentelė
 - Atpažįstami link'ai ir elektroniniai paštai
 
-[version-badge]: https://img.shields.io/badge/version-1.1-blueviolet.svg
+[version-badge]: https://img.shields.io/badge/version-1.2-blueviolet.svg
