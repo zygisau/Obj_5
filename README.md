@@ -12,11 +12,17 @@ Objektinio programavimo 5 užduotis
 - Suranda ir tą patį atlieka su URL adresais.
 
 ## Changelog
-### [v1.0](https://github.com/zygisau/Obj_5/releases/tag/v1.0) - (2019-05-06)  
+
+### [v1.1](https://github.com/zygisau/Obj_5/releases/tag/v1.1) - (2019-06-11)  
+
+**Koreguota**  
+- Optimizacija pakeista į O3
+
+### [v1.0](https://github.com/zygisau/Obj_5/releases/tag/v1.0) - (2019-06-06)  
 
 **Pridėta**  
 
 - Rezultatų faile išvedama pilna cross-reference tipo lentelė
 - Atpažįstami link'ai ir elektroniniai paštai
 
-[version-badge]: https://img.shields.io/badge/version-1.0-blueviolet.svg
+[version-badge]: https://img.shields.io/badge/version-1.1-blueviolet.svg
