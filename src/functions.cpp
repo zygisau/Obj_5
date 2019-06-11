@@ -191,7 +191,7 @@ int readFromFile(mapType& words) {
     return maxWord;
 }
 
-string makeRefsString (const vector<int>& references) {
+string makeRefsString (const set<int>& references) {
     string refs;
     for (int ref : references) {
         refs += " ";

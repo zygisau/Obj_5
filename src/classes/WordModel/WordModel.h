@@ -7,19 +7,20 @@
 
 #include <vector>
 #include <string>
-using std::vector; using std::string;
+#include <set>
+using std::vector; using std::string; using std::set;
 
 class WordModel {
 private:
     int counter = 0;
-    vector<int> reference;
+    set<int> reference;
 public:
-    WordModel() : counter(0), reference(0) {}
-    explicit WordModel(int ref) { counter++; reference.push_back(ref); }
+    WordModel() : counter(0) {}
+    explicit WordModel(int ref) { counter++; reference.insert(ref); }
     void addOne() { counter++; }
-    void addReference(const int& ref) { reference.push_back(ref); }
+    void addReference(const int& ref) { reference.insert(ref); }
     int getCounter() const { return counter; }
-    vector<int> getReference() const { return reference; }
+    set<int> getReference() const { return reference; }
 };
 
 
