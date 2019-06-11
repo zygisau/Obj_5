@@ -12,6 +12,13 @@ int main() {
     // reading words from file and gathering the longest word from this function
     int maxWord = readFromFile(words);
 
+    int longestRef = 0;
+    for (auto& elem : words) {
+        if (longestRef < elem.second.getCounter()) {
+            longestRef = elem.second.getCounter();
+        }
+    }
+
     // printing elements to the file
-    printElements(words, maxWord);
+    printElements(words, maxWord, longestRef);
 }

@@ -201,18 +201,20 @@ string makeRefsString (const set<int>& references) {
     return refs;
 }
 
-void printElements (const mapType& words, const int& maxWord) {
+void printElements (const mapType& words, const int& maxWord, const int& longestRef) {
     ofstream resultFile("result.txt");
     string refs; // var for the string of references
 
     // iterate through all words in the map
-    for(auto& elem : words) {
-        // if the word was used more than one time
-        if (elem.second.getCounter() > 1) {
-            // print it
-            resultFile << std::left << setfill(' ') << elem.first << setw(maxWord - stringLength(elem.first) + 10)
-                       << std::right << elem.second.getCounter()
-                       << "     " << makeRefsString(elem.second.getReference()) << endl;
+    for (int i=1; i<=longestRef; i++) {
+        for (auto &elem : words) {
+            // if the word was used more than one time
+            if (elem.second.getCounter() > 1 && elem.second.getCounter() == i) {
+                // print it
+                resultFile << std::left << setfill(' ') << elem.first << setw(maxWord - stringLength(elem.first) + 10)
+                           << std::right << elem.second.getCounter()
+                           << "     " << makeRefsString(elem.second.getReference()) << endl;
+            }
         }
     }
     resultFile.close();

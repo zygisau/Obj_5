@@ -35,6 +35,6 @@ int readFromFile(mapType& words);
 
 string makeRefsString (const vector<int>& references);
 
-void printElements (const mapType& words, const int& maxWord);
+void printElements (const mapType& words, const int& maxWord, const int& longestRef);
 
 #endif //OBJ_5_FUNCTIONS_H

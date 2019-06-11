@@ -17,6 +17,7 @@ private:
 public:
     WordModel() : counter(0) {}
     explicit WordModel(int ref) { counter++; reference.insert(ref); }
+    explicit WordModel(set<int> refs) : reference(refs) { counter = refs.size(); }
     void addOne() { counter++; }
     void addReference(const int& ref) { reference.insert(ref); }
     int getCounter() const { return counter; }
