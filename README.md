@@ -13,6 +13,11 @@ Objektinio programavimo 5 užduotis
 
 ## Changelog
 
+### [v1.4](https://github.com/zygisau/Obj_5/releases/tag/v1.4) - (2019-06-12)  
+#### EGZAMINO UŽD 3
+**Koreguota**  
+- Pakeista funkcija, spausdinanti į failą
+
 ### [v1.3](https://github.com/zygisau/Obj_5/releases/tag/v1.3) - (2019-06-12)  
 #### EGZAMINO UŽD 1
 **Koreguota**  
